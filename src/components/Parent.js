@@ -5,9 +5,6 @@ export default function (props) {
     const [status, setStatus] = useState("Initial State")
     const handleUpdateStatus = (str) => {
         setStatus(str)
-        setTimeout(()=>{
-            setStatus("Please press the button!")
-        },2000)
     }
     
     return(
