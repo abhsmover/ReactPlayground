@@ -1,7 +1,12 @@
-import React from "react";
-
+import React,{useContext} from "react";
+import { Context } from "../context/Context";
 const About = (props) => {
-  return <h1>This is about page</h1>;
+    const {test} = useContext(Context)
+    return (
+      <div>
+        <h1>This is about page {test}</h1>
+      </div>
+    );
 };
 
 export default About;
