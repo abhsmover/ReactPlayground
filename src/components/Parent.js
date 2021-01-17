@@ -10,7 +10,7 @@ export default function (props) {
     return(
         <>
             <Child propsFromParent={handleUpdateStatus}/>
-            <p>This is updated status : {status}</p>
+            <p>{status}</p>
         </>
     )
 }
